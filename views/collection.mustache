@@ -9,14 +9,17 @@
 <body>
     <header>
         <a href='./collection'>View the Collection</a>
-        <a href= './music'>Manage your Collection</a>
+        <a href= '/'>Manage your Collection</a>
 
     </header>
 
     <div>
-        {{#comic}}
-
-        {{/comic}}
+        <h2>Music Collection</h2>
+        {{#musics}}
+         {{#artistName}}
+        {{artistName}}
+       {{/artistName}}
+       {{musics}}
     </div>
 </body>
 </html>

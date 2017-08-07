@@ -1,6 +1,6 @@
 const mongoose = require ('mongoose');
 
-const musicCollectionSchema = new mongoose.Schema({
+const musicSchema = new mongoose.Schema({
 
     artistName: { type: String, required: true},
     album: [{ 
@@ -18,6 +18,6 @@ const musicCollectionSchema = new mongoose.Schema({
     
 });
 
-const Music = mongoose.model('Music', musicCollectionSchema);
+const Music = mongoose.model('Music', musicSchema);
 
 module.exports = Music;
